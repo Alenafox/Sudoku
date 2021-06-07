@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/back_menu">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Судоку"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="200dp"
+            android:textSize="50dp"
+            android:textColor="#FF3700B3"/>
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/btnContinue"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Продолжить"
+            android:textSize="20dp"
+            android:onClick="continueGame"/>
+
+        <Button
+            android:id="@+id/btnNewGame"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Новая игра"
+            android:textSize="20dp"
+            android:onClick="newGame"/>
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Выход"
+            android:textSize="20dp"
+            android:onClick="exitGame"/>
+
+    </LinearLayout>
+
+</LinearLayout>
